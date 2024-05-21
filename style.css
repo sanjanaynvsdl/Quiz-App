@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ddd5cc;
+}   
+html, body{
+    height: 100%;
+}
+/* Better use flex-box properties (previously height of my body is only till the div container 
+so make sure to give it 100% */
+.page-1{
+    /* text-align: center;
+    margin-top:20rem;
+    position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.page-1 h1{
+    color: #816746;
+    font-size: 50px;
+}
+.page-1 .button1{
+    background-color: white;
+    padding: 8px 25px ;
+    margin-top: 1rem;
+    border-color: #816746;
+    font-size: larger;
+}
+.end-page{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #685031;
+    font-size: 2rem;
+    
+}
+.buttonss{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.end-buttons{
+    
+    padding: 5px 10px;
+    margin: 5px;;
+    background-color: white;
+    color: #685031;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.end-buttons:hover{
+    cursor: pointer;
+    background-color: #816746;
+    color: white;
+}

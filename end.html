@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>End-Page</title>
+</head>
+<body>
+    <div class="end-page">
+        <h1>Quiz-Done!</h1>
+        <h3>Score :<span id="final-score">0</span></h3>
+        <div class="buttonss">
+            <a href="game.html"><button class="end-buttons" id="Play-button"> Play-Again</button></a>
+            <a href="start.html"><button class="end-buttons" id="Play-button">Home-page</button></a>
+        </div>
+    </div>
+    <script>
+        document.getElementById("final-score").innerText =localStorage.getItem("mostRecentScore");
+    </script>
+    
+</body>
+</html>

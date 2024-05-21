@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ddd5cc;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+/* .options {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    background-color: #F0F0F0;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}  */
+
+
+
+ .option {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 3px solid #d0d0d0;
+    border-radius: 5px;
+    overflow: hidden;
+ }
+
+    /* Using this prop' : : The value hidden means that any content that overflows the */
+    /* boundaries of the element will be clipped, and no scrollbars will be provided to view the overflow content. */
+
+.quiz-container h1{
+    color: #816746;
+    padding-bottom: 10px;;
+}
+.lable {
+    background-color: #816746;
+    color: white;
+    padding: 10px 15px; 
+    font-weight: bold;
+    font-size: 16px; 
+}
+/* span {
+    margin-right: 25px;
+    background-color: #816746;
+} */
+.box {
+    background-color:white;
+    padding: 10px 15px;
+    /* flex-grow: 1; */
+}   
+.option:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgb(167, 138, 106); 
+}
+.quiz-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+.correct {
+    background-color: #72d673; /* Green for correct answers */
+}
+
+.incorrect {
+    background-color: #f7655f; /* Red for incorrect answers */
+}
+
