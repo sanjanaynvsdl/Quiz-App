@@ -37,14 +37,14 @@ const progressBar = document.getElementById("progress-bar");
 const totalQuestions = questions.length;
 
 const loadNewQuestion = () => {
-    if (availableQuestions.length === 0) {
+    if (availableQuestions.length === 0 || currentQuestionIndex >= totalQuestions) {
         localStorage.setItem("mostRecentScore", score);
         return window.location.assign("end.html");
     }
 
     currentQuestionIndex++;
     questionNumberText.innerText = `${currentQuestionIndex}/${totalQuestions}`;
-    updateProgressBar(); // Update the progress bar here
+    updateProgressBar();
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];

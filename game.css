@@ -1,4 +1,4 @@
-*{
+/* *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
@@ -25,7 +25,7 @@ body{
 
 
 
- .option {
+ /* .option {
     display: flex;
     align-items: center;
     background-color: white;
@@ -35,7 +35,7 @@ body{
  }
 
     /* Using this prop' : : The value hidden means that any content that overflows the */
-    /* boundaries of the element will be clipped, and no scrollbars will be provided to view the overflow content. */
+    /* boundaries of the element will be clipped, and no scrollbars will be provided to view the overflow content. 
 
 .quiz-container h1{
     color: #816746;
@@ -48,14 +48,11 @@ body{
     font-weight: bold;
     font-size: 16px; 
 }
-/* span {
-    margin-right: 25px;
-    background-color: #816746;
-} */
+
 .box {
     background-color:white;
     padding: 10px 15px;
-    /* flex-grow: 1; */
+
 }   
 .option:hover {
     cursor: pointer;
@@ -68,10 +65,132 @@ body{
     font-size: 2rem;
 }
 .correct {
+    background-color: #72d673;
+} 
+
+.incorrect {
+    background-color: #f7655f;
+}
+#progress-bar{
+    margin-left:12rem;
+    display: flex;
+    justify-content: center;
+} */
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ddd5cc;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quiz-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 20px;
+    background-color: #4caf50;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+}
+.score {
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    font-size: larger;
+}
+
+.question-info{
+    margin-left:1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+}
+
+.question-number, .score-number {
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 3px solid #d0d0d0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgb(167, 138, 106);
+}
+
+.option.correct {
     background-color: #72d673; /* Green for correct answers */
 }
 
-.incorrect {
+.option.incorrect {
     background-color: #f7655f; /* Red for incorrect answers */
+}
+
+
+.quiz-container h1 {
+    color: #816746;
+    padding-bottom: 10px;
+}
+
+.label {
+    background-color: #816746;
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.box {
+    background-color: white;
+    padding: 10px 15px;
+    flex-grow: 1;
 }
 
